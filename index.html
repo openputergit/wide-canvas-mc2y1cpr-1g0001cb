@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaundryHub - Your Digital Laundry Service</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white p-4 fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">LaundryHub</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-blue-200">Home</a>
+                <a href="#" class="hover:text-blue-200">Services</a>
+                <a href="#" class="hover:text-blue-200">About</a>
+                <a href="#" class="hover:text-blue-200">Contact</a>
+                <button class="bg-white text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-100">Login</button>
+            </div>
+            <button class="md:hidden text-2xl"><i class="bi bi-list"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Your Laundry, <br>Our Priority</h1>
+                <p class="text-gray-600 mb-8">Book your laundry service with just a few taps. Professional cleaning, timely delivery, and exceptional care for your clothes.</p>
+                <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 hover-scale">Book Now</button>
+            </div>
+            <div class="md:w-1/2 floating">
+                <img src="https://source.unsplash.com/600x400/?laundry" alt="Laundry Service" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Dashboards</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Customer Dashboard -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                    <i class="bi bi-person-circle text-4xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Customer Dashboard</h3>
+                    <p class="text-gray-600 mt-2">Book services, track orders, and manage your profile</p>
+                </div>
+                <!-- Delivery Dashboard -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                    <i class="bi bi-truck text-4xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Delivery Partner</h3>
+                    <p class="text-gray-600 mt-2">Manage pickups and deliveries efficiently</p>
+                </div>
+                <!-- Store Dashboard -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                    <i class="bi bi-shop text-4xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Store Dashboard</h3>
+                    <p class="text-gray-600 mt-2">Handle orders and manage inventory</p>
+                </div>
+                <!-- Admin Dashboard -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                    <i class="bi bi-gear text-4xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Admin Panel</h3>
+                    <p class="text-gray-600 mt-2">Complete control over the platform</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center hover-scale">
+                    <i class="bi bi-clock text-5xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Quick Turnaround</h3>
+                    <p class="text-gray-600 mt-2">24-48 hour service available</p>
+                </div>
+                <div class="text-center hover-scale">
+                    <i class="bi bi-shield-check text-5xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Quality Assured</h3>
+                    <p class="text-gray-600 mt-2">Professional cleaning services</p>
+                </div>
+                <div class="text-center hover-scale">
+                    <i class="bi bi-geo-alt text-5xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Door-to-Door</h3>
+                    <p class="text-gray-600 mt-2">Free pickup and delivery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">LaundryHub</h4>
+                    <p>Making laundry services accessible to everyone.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-200">About Us</a></li>
+                        <li><a href="#" class="hover:text-blue-200">Services</a></li>
+                        <li><a href="#" class="hover:text-blue-200">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li><i class="bi bi-envelope"></i> support@laundryhub.com</li>
+                        <li><i class="bi bi-phone"></i> +1 234 567 890</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-blue-200"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-200"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-200"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize ScrollReveal
+        ScrollReveal().reveal('.hover-scale', {
+            delay: 200,
+            distance: '20px',
+            origin: 'bottom',
+            duration: 1000,
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            interval: 200
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.bi-list').addEventListener('click', function() {
+            const menu = document.createElement('div');
+            menu.className = 'fixed top-0 left-0 w-full h-full bg-blue-600 z-50 flex flex-col items-center justify-center space-y-8';
+            menu.innerHTML = `
+                <button class="absolute top-4 right-4 text-2xl text-white"><i class="bi bi-x-lg"></i></button>
+                <a href="#" class="text-white text-xl">Home</a>
+                <a href="#" class="text-white text-xl">Services</a>
+                <a href="#" class="text-white text-xl">About</a>
+                <a href="#" class="text-white text-xl">Contact</a>
+                <button class="bg-white text-blue-600 px-6 py-2 rounded-lg">Login</button>
+            `;
+            document.body.appendChild(menu);
+            
+            menu.querySelector('.bi-x-lg').parentElement.addEventListener('click', function() {
+                menu.remove();
+            });
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
